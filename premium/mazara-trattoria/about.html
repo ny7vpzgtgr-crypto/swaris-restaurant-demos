@@ -2,18 +2,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Mazara Trattoria — Story | San Diego, CA</title>
 <style>
-:root{
-  --ink:#1c130b; --bg:#2b1d10; --accent:#c8932f; --accent2:#e7c98b;
-  --cream:#f6ecd9; --muted:rgba(246,236,217,.7); --serif:'Playfair Display', Georgia, serif;
-}
+:root{--ink:#1c130b;--bg:#2b1d10;--accent:#c8932f;--accent2:#e7c98b;--cream:#f6ecd9;--muted:rgba(246,236,217,.7);--serif:'Playfair Display', Georgia, serif;}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--cream);font-family:'Playfair Display', Georgia, serif;overflow-x:hidden;line-height:1.65}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
 ::selection{background:var(--accent);color:var(--ink)}
-.header{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(18px,6vw,90px);
-  background:rgba(0,0,0,.35);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}
+.header{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(18px,6vw,90px);background:rgba(0,0,0,.35);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}
 .brand{font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.4vw,30px);letter-spacing:.12em;display:flex;align-items:center;gap:12px}
 .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
 .nav{display:flex;gap:26px}
@@ -22,10 +17,10 @@ img{display:block;max-width:100%}
 .cta{background:var(--accent);color:var(--ink);padding:11px 22px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;transition:.3s}
 .cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.42) saturate(1.1)}
-.hero .veil{position:absolute;inset:0;background:linear-gradient(120deg, rgba(0,0,0,.75), rgba(0,0,0,.25))}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(1.1)}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(120deg, rgba(0,0,0,.78), rgba(0,0,0,.25))}
 .hero .inner{position:relative;z-index:2;padding:0 clamp(18px,6vw,90px);max-width:880px}
-.eyebrow{text-transform:uppercase;letter-spacing:.4em;font-size:12px;color:var(--accent2);font-weight:800}
+.eyebrow{text-transform:uppercase;letter-spacing:.4em;font-size:12px;color:var(--accent);font-weight:800}
 .hero h1{font-size:clamp(44px,8vw,96px);line-height:1.02;margin:18px 0;font-weight:700}
 .hero p{font-size:clamp(16px,2vw,21px);color:var(--muted);max-width:560px}
 .hero .row{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap}
@@ -44,6 +39,7 @@ h2{font-size:clamp(30px,5vw,58px);line-height:1.05;margin:0 0 22px;font-weight:7
 .card .pad{padding:24px}
 .card h3{margin:0 0 8px;font-size:22px}
 .card .price{float:right;color:var(--accent2);font-weight:800}
+.stars{color:var(--accent2);letter-spacing:3px;margin-bottom:10px;font-size:18px}
 .menu-item{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .menu-item h3{margin:0;font-size:21px}
 .menu-item .desc{color:var(--muted);font-size:15px;margin:6px 0 0}
@@ -64,29 +60,11 @@ footer{padding:60px clamp(18px,6vw,90px);border-top:1px solid rgba(255,255,255,.
 @media(max-width:760px){.nav{display:none}.feature{grid-template-columns:1fr}}
 </style></head><body>
 <div class="float-orb" style="top:-120px;right:-80px"></div>
-
-    <header class="header">
-      <div class="brand"><span class="dot"></span>Mazara Trattoria</div>
-      <nav class="nav">
-        <a href="index.html" class="">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">Story</a>
-        <a href="visit.html">Visit</a>
-      </nav>
-      <a class="cta" href="visit.html">Reserve</a>
-    </header>
-<section><div class="reveal"><div class="kicker">Our Story</div><h2>Built on a feeling, not a formula.</h2></div>
-<div class="feature reveal"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1400&q=80" alt=""/><div>
-<p class="lead">Mazara Trattoria is a neighborhood trattoria in the truest sense — checkered tablecloths, the hum of Italian conversation, and sauces that have been simmering since morning. Our pasta is rolled by hand; our espresso is non-negotiable.</p>
-<p style="color:var(--muted);margin-top:20px">Mazara Trattoria sits in San Diego, CA — a place where the food does the talking. We cook the way we'd cook for family: generous, unhurried, and with a little fire.</p>
-</div></div>
-<div class="gallery">
-  <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1600&q=80" alt=""/><img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=1400&q=80" alt=""/><img src="https://images.unsplash.com/photo-1498579150354-977475b7e1b9?auto=format&fit=crop&w=2000&q=80" alt=""/><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1400&q=80" alt=""/>
-</div></section><footer>
-  <div><strong style="color:var(--cream)">Mazara Trattoria</strong><br/>San Diego, CA · +1 619 284 2050</div>
-  <div>Premium site by swaris operations · +94 766070891</div>
-</footer>
-<script>
-const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}},{threshold:.12}));
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script></body></html>
+<header class="header"><div class="brand"><span class="dot"></span>Mazara Trattoria</div>
+<nav class="nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">Story</a><a href="visit.html">Visit</a></nav>
+<a class="cta" href="visit.html">Reserve</a></header><section><div class="reveal"><div class="kicker">Our Story</div><h2>Built on a feeling, not a formula.</h2></div>
+<div class="feature reveal"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1400&q=80" alt=""/><div><p class="lead">Mazara Trattoria is a neighborhood trattoria in the truest sense — checkered tablecloths, the hum of Italian conversation, and sauces that have been simmering since morning. Our pasta is rolled by hand; our espresso is non-negotiable.</p>
+<p style="color:var(--muted);margin-top:20px">Mazara Trattoria sits in San Diego, CA — a place where the food does the talking. We cook the way we'd cook for family: generous, unhurried, with a little fire.</p></div></div>
+<div class="gallery"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1600&q=80" alt=""/><img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=1400&q=80" alt=""/><img src="https://images.unsplash.com/photo-1498579150354-977475b7e1b9?auto=format&fit=crop&w=2000&q=80" alt=""/><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1400&q=80" alt=""/></div></section><footer><div><strong style="color:var(--cream)">Mazara Trattoria</strong><br/>San Diego, CA · +1 619-284-2050</div>
+<div>Premium site by swaris operations · +94 766070891</div></footer>
+<script>const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script></body></html>
